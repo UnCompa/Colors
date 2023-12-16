@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palets</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tinycolor2@1.4.1/dist/tinycolor-min.js"></script>
+  </head>
+  <body>
+    <div id="app" class="">
+      <main>
+        <header>
+          <h1>Palets</h1>
+          <a href="#cards-container">Tu galeria</a>
+          <a href="#footer">Información</a>
+        </header>
+        <section class="border-b-4">
+          <div
+            class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24"
+          >
+            <div class="flex flex-col w-full mb-12 text-center">
+              <div
+                class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mx-auto mb-5 text-blue-600 rounded-full bg-gray-50"
+              >
+              <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 512 512"><!--Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg></div>
+              <h1
+                class="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-6xl lg:max-w-7xl"
+              >
+                Descubre la paleta <br class="hidden lg:block" />
+                de colores en tus fotos
+              </h1>
+
+              <p
+                class="max-w-xl mx-auto mt-8 text-base leading-relaxed text-center text-gray-500"
+              >
+                Sube un archivo de tipo imagen donde se analizara los colores,
+                el dominante, el color base, y los colores de la imagen
+              </p>
+              <label
+                for="imagen"
+                class="bg-blue-500 w-max mx-auto py-2 px-4 rounded my-4 text-white flex items-center"
+                >Selecciona archivo
+                <div class="px-2">
+                  <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                </div>
+                </label
+              >
+              <input
+                class="hidden h-12 w-32 bg-blue-500"
+                type="file"
+                id="imagen"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="flex-col">
+          <div class="my-4 mx-auto leading-relaxed">
+            <h2 class="text-lg text-gray-600 text-center">Tu galeria:</h2>
+          </div>
+          <!-- Cards container -->
+          <div id="cards-container"></div>
+        </section>
+      </main>
+      <footer id="footer" aria-labelledby="footer-heading">
+        <div class="px-4 py-12 mx-auto bg-gray-50 max-w-7xl sm:px-6 lg:px-16">
+          <div class="flex flex-wrap items-baseline lg:justify-center">
+            <span class="mt-2 text-sm font-light text-gray-500">
+              Copyright © 2023
+              <a
+                href="https://wickedlabs.dev"
+                class="mx-2 text-wickedblue hover:text-gray-500"
+                rel="noopener noreferrer"
+                >@UnCompa</a
+              >. Realizado en 2023
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script type="module" src="/main.js"></script>
+</html>
